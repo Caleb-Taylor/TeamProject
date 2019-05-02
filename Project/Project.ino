@@ -1,9 +1,36 @@
+/*
+5.2.19
+Designed by Caleb Taylor and Jacob Louden
+This program will turn on and turn off 3 LED lights */                   
+
+ */
+
+int LED1 = 13;
+int LED2 = 12;
+int LED3 = 11;
+
 void setup() {
-  // put your setup code here, to run once:
-
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
 }
+  
 
-void loop() {
-  // put your main code here, to run repeatedly:
+
+
+void loop() {      
+  digitalWrite(LED1, HIGH);   //turn on LED1
+  delay(200);                 //wait for 200ma   
+  digitalWrite(LED2, HIGH);   //turn on LED2
+  delay(200);                 //wait for 200ma
+  digitalWrite(LED3, HIGH);   //turn on LED3
+  delay(200);                 //wait for 200ma
+  digitalWrite(LED1, LOW);    //turn off LED1
+  delay(300);                 //wait for 300ma
+  digitalWrite(LED2, LOW);    //turn off LED2
+  delay(300);                 //wait for 300ma
+  digitalWrite(LED3, LOW);    //turn off LED3
+  delay(300);                 //wait for 300ma before running program all over again
+  
 
 }
